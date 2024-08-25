@@ -1,0 +1,221 @@
+.contact-us-section {
+  margin-bottom: 60px;
+}
+.contact-us-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+}
+
+.contact-us-title {
+  font-family: var(--font-family);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--main);
+  
+}
+.contact-us-text {
+    font-family: var(--font-family);
+    color: var(--contact-us-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    margin-bottom: 28px;
+}
+.contact-us-wrap {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-us-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    border-radius: 30px;
+    background: var(--cards);
+    padding: 48px 28px;
+}
+
+.contact-us-lable {
+  padding-bottom: 18px;
+}
+
+.contact-us-input {
+  font-family: var(--font-family);
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 12px 14px;
+  line-height: 1.28571;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+
+  background-color: var(--cards);
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--main);
+}
+.contact-us-input:hover,
+.contact-us-input:focus,
+.contact-us-input:valid {
+  border: 1px solid var(--accent);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-us-input::placeholder {
+  color: var(--main);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.contact-us-lable-comment {
+  padding-bottom: 28px;
+}
+.contact-us-textarea {
+  width: 100%;
+  height: 84px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background-color: transparent;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  resize: none;
+  padding: 12px 14px;
+  font-family: var(--font-family);
+  color: var(--main);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28571;
+}
+.contact-us-textarea::placeholder {
+  color: var(--main);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28571;
+}
+
+.contact-us-textarea:valid,
+.contact-us-textarea:hover {
+  border-color: var(--accent);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button {
+  max-width: 134px;
+  border-radius: 16px;
+  background-color: var(--accent);
+  padding: 12px 50px;
+  color: var(--background);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.28571;
+  cursor: pointer;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover,
+.button:focus {
+  background-color: var(--button-hover);
+  cursor: pointer;
+  color: var(--background);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.28571;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-us-image {
+  border-radius: 30px;
+  margin: 0 auto;
+  background-color: var(--background-img);
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  /* ---------Contact Us--------- */
+.contact-us-section {
+    margin-bottom: 80px;
+  }
+
+  .contact-us-container {
+    gap: 40px;
+  }
+
+  .contact-us-title {
+    font-size: 48px;
+    line-height: 0.91667;
+    letter-spacing: -0.02em;
+    
+  }
+  .contact-us-wrap {
+    gap: 40px;
+  }
+  .contact-us-form {
+    padding: 50px 122px;
+  }
+  .contact-us-text {
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+  .contact-us-input {
+    font-size: 16px;
+    padding: 16px;
+    line-height: 1.25;
+  }
+  .contact-us-textarea {
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 16px;
+    height: 90px;
+  }
+  .button {
+    max-width: 160px;
+    padding: 17px 63px;
+    font-size: 14px;
+  }
+  .contact-us-image {
+    border-radius: 50px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contact-us-section {
+      margin-bottom: 100px;
+    }
+  .contact-us-container {
+gap: 40px;
+  }
+
+  /* --------Contact Us -------- */
+  .contact-us-wrap {
+    flex-wrap: nowrap;
+  }
+  .contact-us-form {
+    padding: 50px 60px;
+  }
+  .contact-us-image {
+    min-width: 530px;
+  }
+}
